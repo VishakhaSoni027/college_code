@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC College</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#333;
+}
+
+header{
+    background:#0b3d91;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#062a66;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:400px;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff9800;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:40px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px #ccc;
+}
+
+.card h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+.faculty{
+    background:#e8eef8;
+}
+
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+
+button{
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#062a66;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header>
+<h1>ABC College</h1>
+<p>Knowledge | Innovation | Success</p>
+</header>
+
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+<div class="hero" id="home">
+<div>
+<h1>Welcome To ABC College</h1>
+<p>Best Education For Bright Future</p>
+<a class="btn" href="#contact">Apply Now</a>
+</div>
+</div>
+
+
+<section id="about">
+
+<h2>About Our College</h2>
+<br>
+
+<p>
+ABC College provides quality education with modern facilities,
+experienced faculty and career-focused programs.
+</p>
+
+</section>
+
+
+
+<section id="courses">
+
+<h2>Our Courses</h2>
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>BCA</h3>
+<p>Computer Applications, Programming and Technology.</p>
+</div>
+
+
+<div class="card">
+<h3>B.Tech</h3>
+<p>Engineering and Advanced Technology Programs.</p>
+</div>
+
+
+<div class="card">
+<h3>MBA</h3>
+<p>Business Management and Leadership Skills.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="faculty">
+
+<h2>Our Facilities</h2>
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>Library</h3>
+<p>Thousands of books and digital resources.</p>
+</div>
+
+
+<div class="card">
+<h3>Computer Lab</h3>
+<p>Modern computers with latest software.</p>
+</div>
+
+
+<div class="card">
+<h3>Campus</h3>
+<p>Safe and student-friendly environment.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+<br>
+
+<form onsubmit="submitForm(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 ABC College | All Rights Reserved</p>
+
+</footer>
+
+
+
+<script>
+
+function submitForm(e){
+
+e.preventDefault();
+
+alert("Your enquiry has been submitted!");
+
+}
+
+</script>
+
+
+</body>
+</html>
